@@ -1,0 +1,15 @@
+Create table datatable(
+run_datetime datetime,
+indicator_id varchar(20),
+indicator_value  varchar(50),
+country_id varchar(5),
+country_value varchar(25),
+countryiso3code varchar(6),
+dDate varchar(4),
+dValue int,
+dScale varchar(15),
+Unit varchar(15),
+obs_status varchar(15),
+dDecimal int,
+CONSTRAINT data_pk PRIMARY KEY (indicator_id, country_id,dDate)
+);
